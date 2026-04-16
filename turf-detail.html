@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMyMatch - Turf Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="page-detail">
+  <div class="container detail-app">
+    <header class="home-header">
+      <div class="home-header-brand">
+        <a href="./index.html" class="home-logo"><span class="home-logo-book">Book</span>MyMatch</a>
+        <p class="home-city" aria-label="City: Ahmedabad">
+          <svg class="home-city-pin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Ahmedabad</span>
+        </p>
+      </div>
+      <button type="button" class="home-login-btn">Login</button>
+    </header>
+
+    <nav class="detail-top-nav" aria-label="Breadcrumb">
+      <a href="./index.html" class="detail-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        Back
+      </a>
+    </nav>
+
+    <main class="detail-page">
+      <section class="gallery-section">
+        <img id="mainPreview" class="main-preview"
+          src="https://images.unsplash.com/photo-1771909713672-4e351f1f8b62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxjcmlja2V0JTIwdHVyZiUyMG5pZ2h0fGVufDB8fHx8MTc3NjA3NzMxMXww&ixlib=rb-4.1.0&q=85"
+          alt="Elite Cricket Hub main view" />
+        <div class="thumb-row">
+          <button class="thumb is-active" type="button"
+            data-image="https://images.unsplash.com/photo-1771909713672-4e351f1f8b62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxjcmlja2V0JTIwdHVyZiUyMG5pZ2h0fGVufDB8fHx8MTc3NjA3NzMxMXww&ixlib=rb-4.1.0&q=85">
+            <img src="https://images.unsplash.com/photo-1771909713672-4e351f1f8b62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxjcmlja2V0JTIwdHVyZiUyMG5pZ2h0fGVufDB8fHx8MTc3NjA3NzMxMXww&ixlib=rb-4.1.0&q=85"
+              alt="Ground view" />
+          </button>
+          <button class="thumb" type="button"
+            data-image="https://images.unsplash.com/photo-1766756499755-0ae763777974?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxzcG9ydHMlMjBhcmVuYSUyMG5pZ2h0fGVufDB8fHx8MTc3NjA3NzMxMXww&ixlib=rb-4.1.0&q=85">
+            <img src="https://images.unsplash.com/photo-1766756499755-0ae763777974?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxzcG9ydHMlMjBhcmVuYSUyMG5pZ2h0fGVufDB8fHx8MTc3NjA3NzMxMXww&ixlib=rb-4.1.0&q=85"
+              alt="Stadium view" />
+          </button>
+        </div>
+      </section>
+
+      <section class="detail-grid">
+        <article class="turf-info">
+          <span class="badge">Indoor</span>
+          <h1>Elite Cricket Hub</h1>
+          <p class="meta">Powai, Mumbai, Maharashtra 400076 <span class="star" aria-hidden="true">★</span> 4.9</p>
+          <p class="description">Premium indoor facility with professional-grade turf and advanced booking system.</p>
+
+          <h3>Amenities</h3>
+          <div class="amenity-list">
+            <span>Premium Turf</span>
+            <span>Showers</span>
+            <span>Lockers</span>
+            <span>Cafeteria</span>
+            <span>Pro Shop</span>
+          </div>
+
+          <h3>Reviews</h3>
+          <div class="reviews-carousel" aria-label="User reviews carousel">
+            <button class="review-nav review-nav-prev" type="button" aria-label="Previous review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+
+            <div class="reviews-viewport" id="reviewsViewport">
+              <div class="reviews-track">
+                <article class="review-card">
+                  <img class="review-avatar"
+                    src="https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?auto=format&fit=crop&w=120&q=80"
+                    alt="Rajesh Kumar" />
+                  <div class="review-content">
+                    <div class="review-head">
+                      <h4>Rajesh Kumar</h4>
+                      <p class="review-stars">★★★★★</p>
+                    </div>
+                    <p class="review-text">Amazing facilities! Had a great time playing here.</p>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <img class="review-avatar"
+                    src="https://images.unsplash.com/photo-1539125530496-3ca408f9c2d9?auto=format&fit=crop&w=120&q=80"
+                    alt="Amit Sharma" />
+                  <div class="review-content">
+                    <div class="review-head">
+                      <h4>Amit Sharma</h4>
+                      <p class="review-stars">★★★★<span>☆</span></p>
+                    </div>
+                    <p class="review-text">Perfect turf for weekend matches. Highly recommended!</p>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <img class="review-avatar"
+                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&q=80"
+                    alt="Priya Patel" />
+                  <div class="review-content">
+                    <div class="review-head">
+                      <h4>Priya Patel</h4>
+                      <p class="review-stars">★★★★★</p>
+                    </div>
+                    <p class="review-text">Clean turf, great lighting, and smooth booking process.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button class="review-nav review-nav-next" type="button" aria-label="Next review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+
+            <div class="review-dots" id="reviewDots" aria-label="Review slide navigation"></div>
+          </div>
+        </article>
+
+        <aside class="booking-card">
+          <p class="price-line"><span>₹3500</span> / hour</p>
+          <p class="slot-title">Available Today</p>
+          <div class="slot-grid">
+            <button class="slot-btn" type="button">6:00 AM</button>
+            <button class="slot-btn" type="button">7:00 AM</button>
+            <button class="slot-btn" type="button">8:00 AM</button>
+            <button class="slot-btn" type="button">9:00 AM</button>
+            <button class="slot-btn" type="button">10:00 AM</button>
+            <button class="slot-btn" type="button">11:00 AM</button>
+          </div>
+          <button id="bookBtn" class="book-btn book-trigger" type="button">Book Now</button>
+        </aside>
+      </section>
+    </main>
+
+  </div>
+
+  <div class="detail-bottom-cta">
+    <div class="container" style="text-align: center;">
+      <button type="button" class="detail-bottom-book-btn book-trigger">Book Now</button>
+    </div>
+  </div>
+
+  <script src="./turf-detail.js"></script>
+</body>
+
+</html>

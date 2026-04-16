@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMyMatch - Turf List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="page-turf-list">
+  <div class="container turf-list-app">
+    <header class="home-header">
+      <div class="home-header-brand">
+        <a href="./index.html" class="home-logo"><span class="home-logo-book">Book</span>MyMatch</a>
+        <p class="home-city" aria-label="City: Bengaluru">
+          <svg class="home-city-pin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Bengaluru</span>
+        </p>
+      </div>
+      <button type="button" class="home-login-btn">Login</button>
+    </header>
+
+    <section class="list-search-row">
+      <form class="list-search" role="search" onsubmit="return false;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M21 21l-4.35-4.35"></path>
+        </svg>
+        <input type="search" placeholder="Search for turfs, sports..." />
+      </form>
+    </section>
+
+    <main class="turf-list-layout">
+      <aside class="list-filters">
+        <div class="filter-card date-filter-card">
+          <h3>Select Date</h3>
+          <div class="week-strip" id="dateFilter">
+            <button class="date-pill is-active" type="button">
+              <span class="day">THU</span>
+              <span class="date">16</span>
+              <span class="month">APR</span>
+            </button>
+            <button class="date-pill" type="button">
+              <span class="day">FRI</span>
+              <span class="date">17</span>
+              <span class="month">APR</span>
+            </button>
+            <button class="date-pill" type="button">
+              <span class="day">SAT</span>
+              <span class="date">18</span>
+              <span class="month">APR</span>
+            </button>
+            <button class="date-pill" type="button">
+              <span class="day">SUN</span>
+              <span class="date">19</span>
+              <span class="month">APR</span>
+            </button>
+            <button class="date-pill" type="button">
+              <span class="day">MON</span>
+              <span class="date">20</span>
+              <span class="month">APR</span>
+            </button>
+            <button class="date-pill" type="button">
+              <span class="day">TUE</span>
+              <span class="date">21</span>
+              <span class="month">APR</span>
+            </button>
+            <button class="date-pill" type="button">
+              <span class="day">WED</span>
+              <span class="date">22</span>
+              <span class="month">APR</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-card">
+          <h3>Time Slot</h3>
+          <div class="chip-row" id="timeFilter">
+            <button class="filter-chip" type="button">Morning</button>
+            <button class="filter-chip" type="button">Afternoon</button>
+            <button class="filter-chip is-active" type="button">Evening</button>
+            <button class="filter-chip" type="button">Night</button>
+          </div>
+        </div>
+
+      </aside>
+
+      <section class="list-content">
+        <div class="list-heading">
+          <div>
+            <h1>Turfs in Bengaluru</h1>
+            <p>24 venues available</p>
+          </div>
+          <button class="sort-btn" type="button">Sort: Popularity</button>
+        </div>
+
+        <div class="turf-list-grid">
+          <article class="list-card">
+            <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=1200&q=80" alt="Greenfield Box Cricket" />
+            <div class="list-card-body">
+              <h3>Greenfield Box Cricket</h3>
+              <p class="place">HSR Layout, 2.4 km away</p>
+              <p class="slot">Available Today, 6:00 PM - 11:00 PM</p>
+              <div class="card-bottom">
+                <p class="price">₹1200 <span>/hr</span></p>
+                <a href="./turf-detail.html" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="list-card">
+            <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=1200&q=80" alt="Skyline Rooftop Arena" />
+            <div class="list-card-body">
+              <h3>Skyline Rooftop Arena</h3>
+              <p class="place">Indiranagar, 5.1 km away</p>
+              <p class="slot">Available Today, 8:00 PM - 1:00 AM</p>
+              <div class="card-bottom">
+                <p class="price">₹1500 <span>/hr</span></p>
+                <a href="./turf-detail.html" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="list-card">
+            <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=1200&q=80" alt="Nightowls Turf" />
+            <div class="list-card-body">
+              <h3>Nightowls Turf</h3>
+              <p class="place">Koramangala, 3.2 km away</p>
+              <p class="slot warn">Almost Full (1 slot left)</p>
+              <div class="card-bottom">
+                <p class="price">₹1000 <span>/hr</span></p>
+                <a href="./turf-detail.html" class="book-link">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="list-card">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80" alt="Urban Play Arena" />
+            <div class="list-card-body">
+              <h3>Urban Play Arena</h3>
+              <p class="place">Whitefield, 12.5 km away</p>
+              <p class="slot">Available Tomorrow</p>
+              <div class="card-bottom">
+                <p class="price">₹1300 <span>/hr</span></p>
+                <a href="./turf-detail.html" class="book-link">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./turf-list.js"></script>
+</body>
+
+</html>

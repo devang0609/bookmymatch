@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMyMatch - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="page-home">
+  <div class="container home-app">
+    <header class="home-header">
+      <div class="home-header-brand">
+        <a href="./index.html" class="home-logo"><span class="home-logo-book">Book</span>MyMatch</a>
+        <p class="home-city" aria-label="City: Mumbai">
+          <svg class="home-city-pin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Ahmedabad</span>
+        </p>
+      </div>
+      <button type="button" class="home-login-btn">Login</button>
+    </header>
+
+    <h1 class="home-headline">Find your dream match with us!</h1>
+
+    <form class="home-search-row" role="search" onsubmit="return false;">
+      <div class="home-search">
+        <span class="search-glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
+        </span>
+        <input type="search" placeholder="Search turf, location…" autocomplete="off" />
+      </div>
+      <button type="button" class="home-filter" aria-label="Filters">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M8 12h8M10 18h4" />
+        </svg>
+      </button>
+    </form>
+
+    <section class="home-section" aria-labelledby="welcome-heading">
+      <div class="home-section-head">
+        <h2 id="welcome-heading">Welcome offer for you</h2>
+        <a href="#">See all</a>
+      </div>
+      <div class="welcome-stack" id="welcomeStack">
+        <div class="welcome-stack-deck" id="welcomeStackDeck" aria-live="polite"></div>
+        <p class="welcome-stack-hint">Swipe the card for the next offer</p>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="category-heading">
+      <div class="home-section-head">
+        <h2 id="category-heading">Category</h2>
+        <a href="#">See all</a>
+      </div>
+      <div class="category-scroll" role="tablist" aria-label="Sports">
+        <button type="button" class="cat-pill is-active" role="tab" aria-selected="true">Cricket</button>
+        <button type="button" class="cat-pill" role="tab" aria-selected="false">Football</button>
+        <button type="button" class="cat-pill" role="tab" aria-selected="false">Pickleball</button>
+        <button type="button" class="cat-pill" role="tab" aria-selected="false">Tennis</button>
+        <button type="button" class="cat-pill" role="tab" aria-selected="false">Badminton</button>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="highlight-heading">
+      <div class="highlight-card" id="highlightCard">
+        <div class="highlight-visual" id="highlightVisual">
+          <div class="hl-scrim" aria-hidden="true"></div>
+          <div class="highlight-meta">
+            <span class="hl-pill">Featured</span>
+            <span class="hl-pill muted" id="highlightRating">★ 4.9</span>
+          </div>
+        </div>
+        <div class="highlight-panel">
+          <h3 id="highlightTitle">Cricket</h3>
+          <p class="sub" id="highlightSub">Discover turfs, join matches easily.</p>
+          <div class="hl-footer">
+            <div class="hl-avatars" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="" />
+              <span class="hl-more">+7</span>
+            </div>
+            <button type="button" class="hl-play" aria-label="Browse turfs">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="popular-heading">
+      <div class="home-section-head">
+        <h2 id="popular-heading">Popular turfs</h2>
+        <a href="./turf-list.html">See all</a>
+      </div>
+      <div id="popularPlaces" class="places-scroll"></div>
+    </section>
+
+    <nav class="home-bottom-nav" aria-label="Primary">
+      <a class="nav-item is-active" href="./index.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        Home
+      </a>
+      <a class="nav-item" href="./booking.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+          <line x1="7" y1="7" x2="7.01" y2="7" />
+        </svg>
+        Booking
+      </a>
+      <a class="nav-item" href="./turf-detail.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M9 9h6v6H9z" />
+        </svg>
+        Turfs
+      </a>
+      <a class="nav-item" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        Inbox
+      </a>
+      <a class="nav-item" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        Profile
+      </a>
+    </nav>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
