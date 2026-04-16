@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMyMatch - My Bookings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="page-booking-list">
+  <div class="container booking-list-app">
+    <header class="home-header">
+      <div class="home-header-brand">
+        <a href="./index.html" class="home-logo"><span class="home-logo-book">Book</span>MyMatch</a>
+        <p class="home-city" aria-label="City: Ahmedabad">
+          <svg class="home-city-pin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Ahmedabad</span>
+        </p>
+      </div>
+      <button type="button" class="home-login-btn">Filter</button>
+    </header>
+
+    <main class="booking-list-page">
+      <div class="list-heading-block">
+        <h1>My Bookings</h1>
+        <p>Track your upcoming and recent turf slots.</p>
+      </div>
+
+      <section class="booking-list-section">
+        <h2>Upcoming</h2>
+        <div class="booking-cards">
+          <article class="booking-list-card">
+            <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?auto=format&fit=crop&w=1200&q=80" alt="Greenfield Box Cricket" />
+            <div class="booking-list-body">
+              <div class="booking-row">
+                <h3>Greenfield Box Cricket</h3>
+                <span class="status-chip upcoming">Upcoming</span>
+              </div>
+              <p><span class="booking-date">Thu, 16 Apr</span> <span class="booking-time">6:00 PM - 7:00 PM</span></p>
+              <p>Booking ID: BMMVC3A26F6</p>
+              <div class="booking-actions">
+                <a href="./turf-detail.html" class="booking-link">View Turf</a>
+                <a href="./payment.html" class="booking-link primary">Pay Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="booking-list-card">
+            <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=1200&q=80" alt="Nightowls Turf" />
+            <div class="booking-list-body">
+              <div class="booking-row">
+                <h3>Nightowls Turf</h3>
+                <span class="status-chip upcoming">Upcoming</span>
+              </div>
+              <p><span class="booking-date">Sun, 19 Apr</span> <span class="booking-time">8:00 PM - 9:00 PM</span></p>
+              <p>Booking ID: BMMP81A2FD</p>
+              <div class="booking-actions">
+                <a href="./turf-detail.html" class="booking-link">View Turf</a>
+                <a href="./booking.html" class="booking-link primary">Modify</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking-list-section">
+        <h2>Recent</h2>
+        <div class="booking-cards">
+          <article class="booking-list-card compact">
+            <div class="booking-list-body">
+              <div class="booking-row">
+                <h3>Skyline Rooftop Arena</h3>
+                <span class="status-chip done">Completed</span>
+              </div>
+              <p><span class="booking-date">Mon, 13 Apr</span> <span class="booking-time">7:00 PM - 8:00 PM</span></p>
+              <p>Amount Paid: ₹1500</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="home-bottom-nav" aria-label="Primary">
+      <a class="nav-item" href="./index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        Home
+      </a>
+      <a class="nav-item is-active" href="./booking-list.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+          <line x1="7" y1="7" x2="7.01" y2="7" />
+        </svg>
+        Booking
+      </a>
+      <a class="nav-item" href="./turf-list.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M9 9h6v6H9z" />
+        </svg>
+        Turfs
+      </a>
+      <a class="nav-item" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        Inbox
+      </a>
+      <a class="nav-item" href="./profile.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        Profile
+      </a>
+    </nav>
+  </div>
+</body>
+
+</html>
