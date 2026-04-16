@@ -1242,7 +1242,7 @@ body.page-home .container {
 
 .nav-item.is-active {
   color: #2563eb;
-  background: rgba(37, 99, 235, 0.12);
+  background: rgb(37 99 235 / 28%);
 }
 
 .nav-item:not(.is-active):hover {
