@@ -7,7 +7,8 @@
   <title>BookMyMatch - Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -35,12 +36,31 @@
 
     <main class="profile-page">
       <section class="profile-card">
-        <img class="profile-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+        <img class="profile-avatar"
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
           alt="Jack Ray" />
         <div class="profile-meta">
           <h1>Jack Ray</h1>
-          <p>jackray@email.com</p>
+          <p>jackray@email.com <br> 8979879879</p>
           <span class="profile-badge">Premium Member</span>
+        </div>
+      </section>
+
+      <section class="profile-section profile-coin" aria-labelledby="coin-heading">
+        <div class="profile-coin-inner">
+          <div class="profile-coin-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="12" cy="7" rx="7.5" ry="2.6" stroke="currentColor" stroke-width="1.6" />
+              <ellipse cx="12" cy="12" rx="7.5" ry="2.6" stroke="currentColor" stroke-width="1.6" />
+              <ellipse cx="12" cy="17" rx="7.5" ry="2.6" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+          </div>
+          <div class="profile-coin-copy">
+            <!-- <h2 id="coin-heading">BookMyCoins</h2> -->
+            <p class="profile-coin-balance"><span class="profile-coin-amount">150</span> coins</p>
+            <p class="profile-coin-hint">Earn on bookings · redeem on select turfs</p>
+          </div>
+          <!-- <a href="#" class="profile-coin-link">View history</a> -->
         </div>
       </section>
 
@@ -81,19 +101,19 @@
         </svg>
         Home
       </a>
-      <a class="nav-item" href="./booking-list.html">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
-          <line x1="7" y1="7" x2="7.01" y2="7" />
-        </svg>
-        Booking
-      </a>
       <a class="nav-item" href="./turf-list.html">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="3" y="3" width="18" height="18" rx="2" />
           <path d="M9 9h6v6H9z" />
         </svg>
         Turfs
+      </a>
+      <a class="nav-item" href="./booking-list.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+          <line x1="7" y1="7" x2="7.01" y2="7" />
+        </svg>
+        Booking
       </a>
       <a class="nav-item" href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

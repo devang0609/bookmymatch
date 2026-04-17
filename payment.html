@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BookMyMatch - Payment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -14,6 +16,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body class="page-payment">
   <div class="container payment-app">
     <header class="home-header">
@@ -41,58 +44,59 @@
     </nav>
 
     <main class="payment-page">
-    <div class="payment-grid">
-      <section class="payment-left">
-        <div class="progress-row">
-          <div class="step is-complete"><span>✓</span> Booking Details</div>
-          <div class="step-line active"></div>
-          <div class="step is-active"><span>2</span> Payment</div>
-        </div>
-
-        <h1>Complete Payment</h1>
-
-        <div class="field-group">
-          <h3>Select Payment Method</h3>
-          <div id="methodList" class="method-list">
-            <button class="method-btn active" type="button" data-method="UPI">
-              <span class="method-icon">📱</span>
-              <span>UPI</span>
-            </button>
-            <button class="method-btn" type="button" data-method="CARD">
-              <span class="method-icon">💳</span>
-              <span>Credit/Debit Card</span>
-            </button>
-            <button class="method-btn" type="button" data-method="BANK">
-              <span class="method-icon">🏦</span>
-              <span>Net Banking</span>
-            </button>
+      <div class="payment-grid">
+        <section class="payment-left">
+          <div class="progress-row">
+            <div class="step is-complete"><span>✓</span> Booking Details</div>
+            <div class="step-line active"></div>
+            <div class="step is-active"><span>2</span> Payment</div>
           </div>
-        </div>
 
-        <div class="payment-detail-box">
-          <h4>Payment Details (Demo)</h4>
-          <input id="paymentInput" type="text" placeholder="Enter UPI ID" />
-        </div>
+          <h1>Complete Payment</h1>
 
-        <button id="payBtn" class="pay-btn" type="button">Pay ₹3500</button>
-        <p class="disclaimer">This is a demo payment. No actual transaction will be made.</p>
-      </section>
+          <div class="field-group">
+            <h3>Select Payment Method</h3>
+            <div id="methodList" class="method-list">
+              <button class="method-btn active" type="button" data-method="UPI">
+                <span class="method-icon">📱</span>
+                <span>UPI</span>
+              </button>
+              <button class="method-btn" type="button" data-method="CARD">
+                <span class="method-icon">💳</span>
+                <span>Credit/Debit Card</span>
+              </button>
+              <button class="method-btn" type="button" data-method="BANK">
+                <span class="method-icon">🏦</span>
+                <span>Net Banking</span>
+              </button>
+            </div>
+          </div>
 
-      <aside class="order-summary">
-        <h2>Order Summary</h2>
-        <h3 id="orderTurf">Elite Cricket Hub</h3>
-        <p class="booking-id">Booking ID: <span id="orderBookingId">BMMVC3A26F6</span></p>
+          <div class="payment-detail-box">
+            <h4>Payment Details (Demo)</h4>
+            <input id="paymentInput" type="text" placeholder="Enter UPI ID" />
+          </div>
 
-        <div class="order-row"><span>Date</span><strong id="orderDate">Apr 15, 2026</strong></div>
-        <div class="order-row"><span>Time</span><strong id="orderTime">6:00 AM</strong></div>
-        <div class="order-row"><span>Turf Cost</span><strong id="orderCost">₹3500</strong></div>
-        <div class="order-row"><span>Taxes & Fees</span><strong>₹0</strong></div>
-        <div class="order-row total"><span>Total Amount</span><strong id="orderTotal">₹3500</strong></div>
-      </aside>
-    </div>
+          <button id="payBtn" class="pay-btn" type="button">Pay ₹3500</button>
+          <p class="disclaimer">This is a demo payment. No actual transaction will be made.</p>
+        </section>
+
+        <aside class="order-summary">
+          <h2>Order Summary</h2>
+          <h3 id="orderTurf">Elite Cricket Hub</h3>
+          <p class="booking-id">Booking ID: <span id="orderBookingId">BMMVC3A26F6</span></p>
+
+          <div class="order-row"><span>Date</span><strong id="orderDate">Apr 15, 2026</strong></div>
+          <div class="order-row"><span>Time</span><strong id="orderTime">6:00 AM</strong></div>
+          <div class="order-row"><span>Turf Cost</span><strong id="orderCost">₹3500</strong></div>
+          <div class="order-row"><span>Taxes & Fees</span><strong>₹0</strong></div>
+          <div class="order-row total"><span>Total Amount</span><strong id="orderTotal">₹3500</strong></div>
+        </aside>
+      </div>
     </main>
   </div>
 
   <script src="./payment.js"></script>
 </body>
+
 </html>

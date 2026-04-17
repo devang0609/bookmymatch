@@ -1,6 +1,6 @@
 const turfData = [
   { name: "Elite Cricket Hub", city: "Mumbai", price: 3500, rating: 4.9 },
-  { name: "Strikers Paradise", city: "Bengaluru", price: 3000, rating: 4.9 },
+  { name: "Strikers Paradise", city: "Ahmedabad", price: 3000, rating: 4.9 },
   { name: "Night Owl Cricket", city: "Delhi", price: 2800, rating: 4.8 },
   { name: "Champions Arena", city: "Mumbai", price: 2500, rating: 4.8 },
   { name: "Midnight Strikers", city: "Pune", price: 2200, rating: 4.7 },
