@@ -3159,6 +3159,8 @@ body.page-turf-list .container {
 
 .date-filter-card {
   overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 @media (min-width: 992px) {
@@ -3589,4 +3591,3 @@ body.page-profile .container {
     display: none;
   }
 }
-

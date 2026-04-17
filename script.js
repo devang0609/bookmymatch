@@ -38,7 +38,7 @@ function createTurfCard(turf, index) {
 
   const detailsBtn = card.querySelector(".details-btn");
   detailsBtn.addEventListener("click", () => {
-    window.location.href = "./turf-list.html";
+    window.location.href = "./turf-detail.html";
   });
 
   return card;
@@ -73,7 +73,7 @@ function createPlaceCard(turf, index) {
   `;
 
   card.querySelector(".place-cta").addEventListener("click", () => {
-    window.location.href = "./turf-list.html";
+    window.location.href = "./turf-detail.html";
   });
 
   return card;
